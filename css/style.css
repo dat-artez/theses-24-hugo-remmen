@@ -15,10 +15,33 @@
     src : url(../fonts/SourceCodePro-It.ttf);
 }
 
+canvas {
+    position:   absolute;
+    z-index:    10;
+    top:        0; 
+    left:       0;
+    margin-left : 25%;
+    margin-right : 25%;
+    margin-top : 5%;
+    pointer-events: none;
+}
+
 body {
     margin-left : 25%;
     margin-right : 25%;
-    background-color: black;
+    background-color: hsl(0,0%,0%);
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left : 5%;
+        margin-right : 5%;
+    }
+
+    canvas {
+        margin-left : 5%;
+        margin-right : 5%;
+    }
 }
 
 .title {
